@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FaceShieldComponent } from './face-shield.component';
+import { GearComponent } from './gear.component';
 
-describe('FaceShieldComponent', () => {
-  let component: FaceShieldComponent;
-  let fixture: ComponentFixture<FaceShieldComponent>;
+describe('GearComponent', () => {
+  let component: GearComponent;
+  let fixture: ComponentFixture<GearComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FaceShieldComponent ]
+      declarations: [ GearComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FaceShieldComponent);
+    fixture = TestBed.createComponent(GearComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
