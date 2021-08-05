@@ -9,7 +9,22 @@ export class InstrumentsComponent implements OnInit {
 
   constructor() { }
 
+  instrumentproducts : any = [];
+
   ngOnInit(): void {
+    this.instrumentproducts=[
+      {
+        title: 'one',
+        price: '30',
+        image: ''
+      },
+      {
+        title: 'two',
+        price: '30',
+        image: ''
+      }
+
+    ]
   }
 
 }

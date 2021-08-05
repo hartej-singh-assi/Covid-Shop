@@ -9,7 +9,22 @@ export class CoolMaskComponent implements OnInit {
 
   constructor() { }
 
+  cmaskproducts : any = [];
+  
   ngOnInit(): void {
+    this.cmaskproducts=[
+      {
+        title: 'one',
+        price: '30',
+        image: ''
+      },
+      {
+        title: 'two',
+        price: '30',
+        image: ''
+      }
+
+    ]
   }
 
 }

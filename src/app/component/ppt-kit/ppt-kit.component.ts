@@ -9,7 +9,23 @@ export class PptKitComponent implements OnInit {
 
   constructor() { }
 
+  pptproducts : any = [];
+
+
   ngOnInit(): void {
+    this.pptproducts=[
+      {
+        title: 'one',
+        price: '30',
+        image: ''
+      },
+      {
+        title: 'two',
+        price: '30',
+        image: ''
+      }
+
+    ]
   }
 
 }

@@ -9,7 +9,22 @@ export class N95Component implements OnInit {
 
   constructor() { }
 
+  n95products : any = [];
+
   ngOnInit(): void {
+    this.n95products=[
+      {
+        title: 'one',
+        price: '30',
+        image: ''
+      },
+      {
+        title: 'two',
+        price: '30',
+        image: ''
+      }
+
+    ]
   }
 
 }

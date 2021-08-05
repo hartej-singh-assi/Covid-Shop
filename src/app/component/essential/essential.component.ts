@@ -9,7 +9,22 @@ export class EssentialComponent implements OnInit {
 
   constructor() { }
 
+  essentialproducts : any = [];
+
   ngOnInit(): void {
+    this.essentialproducts=[
+      {
+        title: 'one',
+        price: '30',
+        image: ''
+      },
+      {
+        title: 'two',
+        price: '30',
+        image: ''
+      }
+
+    ]
   }
 
 }

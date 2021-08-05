@@ -1,1 +1,17 @@
-<h1>Turban Masks</h1>
+<hr>
+<div class="row">
+    <div class="col-md-3" *ngFor="let tmask of tmaskproducts">
+        <div style="padding: 50px;">
+            <div class="card" style="width: 18rem;">
+                <img [src]="tmask.image" class="card-img-top" alt="..." style="width: 318px;;height: 180px;">
+                <div class="card-body">
+                    <h5 class="card-title">{{tmask.title}}</h5>
+                    <p class="card-text">{{tmask.price | currency:'INR'}}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>

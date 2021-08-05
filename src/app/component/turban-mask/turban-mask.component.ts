@@ -9,7 +9,22 @@ export class TurbanMaskComponent implements OnInit {
 
   constructor() { }
 
+  tmaskproducts : any = [];
+
   ngOnInit(): void {
+    this.tmaskproducts=[
+      {
+        title: 'one',
+        price: '30',
+        image: ''
+      },
+      {
+        title: 'two',
+        price: '30',
+        image: ''
+      }
+
+    ]
   }
 
 }

@@ -1,1 +1,17 @@
-<h1>N95</h1>
+<hr>
+<div class="row">
+    <div class="col-md-3" *ngFor="let n95 of n95products">
+        <div style="padding: 50px;">
+            <div class="card" style="width: 18rem;">
+                <img [src]="n95.image" class="card-img-top" alt="..." style="width: 318px;;height: 180px;">
+                <div class="card-body">
+                    <h5 class="card-title">{{n95.title}}</h5>
+                    <p class="card-text">{{n95.price | currency:'INR'}}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
