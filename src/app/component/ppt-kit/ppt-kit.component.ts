@@ -14,16 +14,46 @@ export class PptKitComponent implements OnInit {
 
   ngOnInit(): void {
     this.pptproducts=[
-      {
-        title: 'one',
-        price: '30',
-        image: ''
-      },
-      {
-        title: 'two',
-        price: '30',
-        image: ''
-      }
+    { 
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown21.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown20.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown3.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown4.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown5.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown6.jpg'
+    },
+    {
+      title: 'PPT-Kit',
+      price: '30',
+      image: '../../../assets/images/gown7.jpg'
+    },
 
     ]
   }

@@ -13,16 +13,46 @@ export class N95Component implements OnInit {
 
   ngOnInit(): void {
     this.n95products=[
-      {
-        title: 'one',
+      { 
+        title: 'N95',
         price: '30',
-        image: ''
+        image: '../../../assets/images/mask.jpg'
       },
       {
-        title: 'two',
+        title: 'N95',
         price: '30',
-        image: ''
-      }
+        image: '../../../assets/images/n1.jpg'
+      },
+      {
+        title: 'N95',
+        price: '30',
+        image: '../../../assets/images/n2.jpg'
+      },
+      {
+        title: 'N95',
+        price: '30',
+        image: '../../../assets/images/n3.jpg'
+      },
+      {
+        title: 'N95',
+        price: '30',
+        image: '../../../assets/images/n4.jpg'
+      },
+      {
+        title: 'N95',
+        price: '30',
+        image: '../../../assets/images/n5.jpeg'
+      },
+      {
+        title: 'N95',
+        price: '30',
+        image: '../../../assets/images/n6.jpg'
+      },
+      {
+        title: 'N95',
+        price: '30',
+        image: '../../../assets/images/n7.jpg'
+      },
 
     ]
   }
