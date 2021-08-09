@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-head-gear',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadGearComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
   hgearproducts : any = [];
 
   ngOnInit(): void {
@@ -106,6 +107,10 @@ export class HeadGearComponent implements OnInit {
 
 
     ]
+  }
+
+  addToCart(hgear: any){
+    this.cartService.addToCart(hgear);
   }
 
 }

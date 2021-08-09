@@ -17,6 +17,7 @@ import { SanitizerComponent } from './component/sanitizer/sanitizer.component';
 import { InstrumentsComponent } from './component/instruments/instruments.component';
 import { GearComponent } from './component/gear/gear.component';
 import { MedicareComponent } from './component/medicare/medicare.component';
+import { CartComponent } from './component/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MedicareComponent } from './component/medicare/medicare.component';
     SanitizerComponent,
     InstrumentsComponent,
     GearComponent,
-    MedicareComponent
+    MedicareComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-turban-mask',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TurbanMaskComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   tmaskproducts : any = [];
 
@@ -25,6 +26,10 @@ export class TurbanMaskComponent implements OnInit {
       }
 
     ]
+  }
+
+  addToCart(tmask: any){
+    this.cartService.addToCart(tmask);
   }
 
 }

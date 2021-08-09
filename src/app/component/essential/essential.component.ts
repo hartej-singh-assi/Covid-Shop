@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-essential',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EssentialComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   essentialproducts : any = [];
 
@@ -25,6 +26,10 @@ export class EssentialComponent implements OnInit {
       }
 
     ]
+  }
+
+  addToCart(essential: any){
+    this.cartService.addToCart(essential);
   }
 
 }

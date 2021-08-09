@@ -14,6 +14,7 @@ import { HeadGearComponent } from './component/head-gear/head-gear.component';
 import { sanitizeIdentifier } from '@angular/compiler';
 import { SanitizerComponent } from './component/sanitizer/sanitizer.component';
 import { InstrumentsComponent } from './component/instruments/instruments.component';
+import { CartComponent } from './component/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
   },
 
   {

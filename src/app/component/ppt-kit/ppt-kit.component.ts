@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-ppt-kit',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PptKitComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   pptproducts : any = [];
 
@@ -56,6 +57,10 @@ export class PptKitComponent implements OnInit {
     },
 
     ]
+  }
+
+  addToCart(ppt: any){
+    this.cartService.addToCart(ppt);
   }
 
 }

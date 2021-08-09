@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-n95',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class N95Component implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   n95products : any = [];
 
@@ -55,6 +56,10 @@ export class N95Component implements OnInit {
       },
 
     ]
+  }
+
+  addToCart(n95: any){
+    this.cartService.addToCart(n95);
   }
 
 }

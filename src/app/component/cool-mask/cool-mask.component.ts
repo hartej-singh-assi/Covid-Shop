@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-cool-mask',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoolMaskComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   cmaskproducts : any = [];
   
@@ -115,6 +116,10 @@ export class CoolMaskComponent implements OnInit {
       },
 
     ]
+  }
+
+  addToCart(cmask: any){
+    this.cartService.addToCart(cmask);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-sanitizer',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SanitizerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : CartService) { }
 
   sanitaryproducts : any = [];
 
@@ -115,6 +116,10 @@ export class SanitizerComponent implements OnInit {
       },
 
     ]
+  }
+
+  addToCart(sanp: any){
+    this.cartService.addToCart(sanp);
   }
 
 }
