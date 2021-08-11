@@ -101,7 +101,7 @@ export class HeadGearComponent implements OnInit {
       {
         title: 'Face-Shield',
         price: '275',
-        image: '../../../assets/images/face-shield8.jpg.crdownload'
+        image: '../../../assets/images/Face-shield3.jpg'
       },
 
 
