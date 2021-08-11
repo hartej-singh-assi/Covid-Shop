@@ -16,12 +16,12 @@ export class CoolMaskComponent implements OnInit {
     this.cmaskproducts=[
       { 
         title: 'Fabric Printed Mask',
-        price: '30',
+        price: '299',
         image: '../../../assets/images/mask1.webp'
       },
       {
-        title: 'Fabric Printed Mask',
-        price: '30',
+        title: 'Kids Mask',
+        price: '149',
         image: '../../../assets/images/mask7.jpg'
       },
       {
@@ -40,12 +40,12 @@ export class CoolMaskComponent implements OnInit {
         image: '../../../assets/images/mask3.jpg'
       },
       {
-        title: 'Fabric Printed Mask',
+        title: 'Kids Mask',
         price: '30',
         image: '../../../assets/images/mask9.png'
       },
       {
-        title: 'Fabric Printed Mask',
+        title: 'Kids Mask',
         price: '30',
         image: '../../../assets/images/mask10.jpg'
       },
@@ -55,28 +55,28 @@ export class CoolMaskComponent implements OnInit {
         image: '../../../assets/images/mask4.jpg'
       },
       { 
-        title: 'Fabric Printed Mask',
+        title: 'Kids Mask',
         price: '30',
         image: '../../../assets/images/mask11.jpg'
       },
       {
-        title: 'Fabric Printed Mask',
+        title: 'Kids Mask',
         price: '30',
         image: '../../../assets/images/mask12.jpg'
       },
       {
-        title: 'Fabric Printed Mask',
+        title: 'Kids Mask',
         price: '30',
         image: '../../../assets/images/mask13.jpg'
       },
       {
-        title: 'Fabric Printed Mask',
+        title: 'Kids Mask',
         price: '30',
         image: '../../../assets/images/mask14.jpg'
       },
       {
         title: 'Fabric Printed Mask',
-        price: '30',
+        price: '45',
         image: '../../../assets/images/mask5.jpg'
       },
       {
@@ -86,17 +86,17 @@ export class CoolMaskComponent implements OnInit {
       },
       {
         title: 'Fabric Printed Mask',
-        price: '30',
+        price: '49',
         image: '../../../assets/images/mask15.webp'
       },
       {
         title: 'Fabric Printed Mask',
-        price: '30',
+        price: '59',
         image: '../../../assets/images/mask16.webp'
       },
       {
         title: 'Fabric Printed Mask',
-        price: '30',
+        price: '69',
         image: './../../assets/images/mask17.jpg'
       },
       {
@@ -106,13 +106,8 @@ export class CoolMaskComponent implements OnInit {
       },
       {
         title: 'Fabric Printed Mask',
-        price: '30',
+        price: '249',
         image: '../../../assets/images/mask19.jpg'
-      },
-      {
-        title: 'Fabric Printed Mask',
-        price: '30',
-        image: '../../../assets/images/mask.jpg'
       },
 
     ]

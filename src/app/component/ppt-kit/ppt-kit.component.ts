@@ -17,42 +17,42 @@ export class PptKitComponent implements OnInit {
     this.pptproducts=[
     { 
       title: 'PPT-Kit',
-      price: '30',
+      price: '330',
       image: '../../../assets/images/gown.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '304',
       image: '../../../assets/images/gown21.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '299',
       image: '../../../assets/images/gown20.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '599',
       image: '../../../assets/images/gown3.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '499',
       image: '../../../assets/images/gown4.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '458',
       image: '../../../assets/images/gown5.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '165',
       image: '../../../assets/images/gown6.jpg'
     },
     {
       title: 'PPT-Kit',
-      price: '30',
+      price: '124',
       image: '../../../assets/images/gown7.jpg'
     },
 
