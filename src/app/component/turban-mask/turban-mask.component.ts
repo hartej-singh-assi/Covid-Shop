@@ -15,21 +15,25 @@ export class TurbanMaskComponent implements OnInit {
   ngOnInit(): void {
     this.tmaskproducts=[
       {
+        id:"T1",
         title: 'Turban Mask',
         price: '169',
         image: '../../../assets/images/tmask1.jpeg'
       },
       {
+        id:"T2",
         title: 'Turban Mask',
         price: '210',
         image: '../../../assets/images/tmask2.jpeg'
       },
       {
+        id:"T3",
         title: 'Turban Mask Extender',
         price: "24",
         image: '../../../assets/images/tmask3.jpeg'
       },
       {
+        id:"T4",
         title: 'Turban Mask Extender',
         price: '119',
         image: '../../../assets/images/Turban Mask (Long String).jpg'

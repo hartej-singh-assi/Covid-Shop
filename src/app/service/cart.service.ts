@@ -6,36 +6,53 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CartService {
 
-  public cartItemList : any =[]
+  localItem : any;
+  public cartItemList : any = []
   public productList = new BehaviorSubject<any>([]);
   
-  constructor() { }
-  getProducts(){
-    return this.productList.asObservable();
-  }
+  constructor() {
+    // this.localItem = localStorage.getItem('cartItemList');
+    // if(this.localItem == null){
+    //   this.cartItemList = [];
+    // }
+    // else{
+    //   this.cartItemList = JSON.parse(this.localItem);
+    // }
+   }
+  // getProducts(){
+  //   return this.productList.asObservable();
+  // }
 
-  setProducts(Product : any){
-    this.cartItemList.push(...Product);
-    this.productList.next(Product);
-  }
+  // setProducts(Product : any){
+  //   this.cartItemList.push(...Product);
+  //   this.productList.next(Product);
+  // }
 
   addToCart(product : any){
-    this.cartItemList.push(product);
-    this.productList.next(this.cartItemList);
-    this.getTotalPrice();
-    console.log(this.cartItemList);
+    const prodIndex = this.cartItemList.findIndex((x: any) => String(x.id) === String(product.id));
+    if (prodIndex > -1) {
+      this.cartItemList[prodIndex]['quantity'] += 1; 
+    } else {
+      this.cartItemList.push({...product, quantity: 1});
+    }
+    // this.productList.next(this.cartItemList);
+    // this.getTotalPrice();
+    // console.log(this.cartItemList);
+    localStorage.setItem("cartItemList",JSON.stringify(this.cartItemList));
   }
 
-  getTotalPrice() : number{
-    let grandTotal = 0;
-    this.cartItemList.map((a : any)=>{
-      grandTotal += a.total;
-    })
-    return grandTotal;
-  }
+  // getTotalPrice() : number{
+  //   let grandTotal = 0;
+  //   this.cartItemList.map((a : any)=>{
+  //     grandTotal += a.total;
+  //   })
+  //   return grandTotal;
+  // }
 
   clearCart(){
     this.cartItemList = []
-    this.productList.next(this.cartItemList);
+    // this.productList.next(this.cartItemList);
+    localStorage.setItem("cartItemList",JSON.stringify([]));
+
   }
 }

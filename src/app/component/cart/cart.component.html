@@ -1,14 +1,14 @@
 <br>
 <h1>My Cart</h1>
 
-<ng-container *ngIf="products.length == 0">
+<ng-container *ngIf="!products.length">
     <div class="center">
         <h4>Your cart is empty!</h4>
         <h6>Please add items to your cart</h6>
     </div>    
 </ng-container>
 
-<ng-container *ngIf="products.length != 0">
+<ng-container *ngIf="products.length">
    <div class="container">
         <div class="card-table">
             <div class="cart-product">
@@ -19,14 +19,16 @@
                             <th>Product</th>
                             <th>Quantity</th>
                             <th>Price</th>
+                            <th>Amount</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let item of products; let i = index">
-                            <td><img style="width: 120px ;height: 97.33px;" src="{{item.image}}" alt=""></td>
+                            <td><img style="width: 120px ;height: 97.33px;" class="mx-auto d-block" src="{{item.image}}" alt=""></td>
                             <td>{{item.title}}</td>
-                            <td>1</td>
+                            <td>{{item.quantity}}</td>
                             <td>{{item.price | currency:'INR'}}</td>
+                            <td>{{item.amount | currency:'INR'}}</td>
                         </tr>
                         <tr>
                             <td><button (click)="emptycart()" class="btn btn-danger ">Empty Cart</button></td>

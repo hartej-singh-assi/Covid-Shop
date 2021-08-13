@@ -9,17 +9,25 @@ import { CartService } from 'src/app/service/cart.service';
 export class CartComponent implements OnInit {
 
   public products : any = [];
-  public grandTotal !: number;
+  public grandTotal : number = 0;
+
   constructor(private cartService : CartService) { }
 
   ngOnInit(): void {
-    this.cartService.getProducts()
-    .subscribe(res=>{
-      this.products = res;
-      this.grandTotal = this.cartService.getTotalPrice();
-    })
+    this.products = this.cartService.cartItemList;
+    this.products.map((x: any) => {
+      x.amount = Number(x.price) * Number(x.quantity);
+      this.grandTotal += Number(x.amount);
+    });
+    // this.cartService.getProducts()
+    // .subscribe(res=>{
+    //   this.products = res;
+    //   this.grandTotal = this.cartService.getTotalPrice();
+    //   console.log(this.grandTotal);
+    // })
   }
   emptycart(){
+    this.products = [];
     this.cartService.clearCart();
   }
 
