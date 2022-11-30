@@ -1,4 +1,3 @@
-QUESTION BANK FOR WT FINAL EXAM
 1)	Recreate the Image Given below using HTML & CSS.
 Let the background be of color - #191919
 The color of the cirle should be - #F9E492
